@@ -9,7 +9,8 @@ function addEntry() {
   const pcs = Number(document.getElementById("pcs").value);
   const meter = Number(document.getElementById("meter").value);
 
-  if (!lot || pcs <= 0 || meter <= 0) {
+ if (!lot || pcs === 0 || meter === 0) {
+
     alert("Please enter valid Lot, Pcs and Meter");
     return;
   }
