@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fabric ERP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body { font-family: Arial; background:#f4f6f8; padding:10px }
+    h2 { background:#222; color:#fff; padding:10px }
+    input, button { padding:6px; margin:4px }
+    table { width:100%; border-collapse:collapse; background:#fff }
+    th, td { border:1px solid #ccc; padding:6px; text-align:center }
+    th { background:#eee }
+  </style>
+</head>
+
+<body>
+
+<h2>Fabric ERP</h2>
+
+<input id="lot" placeholder="Lot No">
+<input id="pcs" type="number" placeholder="Pcs">
+<input id="meter" type="number" placeholder="Meter">
+<button onclick="addEntry()">Save</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lot</th>
+      <th>Pcs</th>
+      <th>Meter</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
